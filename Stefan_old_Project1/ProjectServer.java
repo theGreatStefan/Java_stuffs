@@ -26,7 +26,7 @@ public class ProjectServer extends Thread {
 	
 	private static final String TEMPKEY = "" + Math.random();
 
-	public void run() {
+	/*public void run() {
 		try {
 			ObjectInputStream INPUT = new ObjectInputStream((System.in));
 			String str = INPUT.readUTF();
@@ -42,7 +42,7 @@ public class ProjectServer extends Thread {
 			System.out.println("Problem sleeping");
 		}
 
-	}
+	}*/
 
 	public static void main(String[] args) {
 		System.out.println("Starting server...");
