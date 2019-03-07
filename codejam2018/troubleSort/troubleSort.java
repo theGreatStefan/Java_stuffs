@@ -8,6 +8,7 @@ public class troubleSort {
 	public static void main(String[] args) {
 		String filename;
 		int[] seqArr;
+		int index;
 
 		filename = args[0];
 		read_initial_file(filename);
@@ -19,8 +20,15 @@ public class troubleSort {
 			for (int j=0; j < seqArr.length; j++) {
 				System.out.print(seqArr[j]+" ");
 			}
-			System.out.println("");
+			System.out.print(" ");
+			index = find_index(seqArr);
+			if (index != -1) {
+				System.out.println("\t [-] It all goes wrong at index: "+index);
+			} else {
+				System.out.println("");
+			}
 		}
+		
 
 	}
 
